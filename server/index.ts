@@ -13,7 +13,7 @@ const io = new Server(server, {
 type GameMap = Record<string, ReturnType<typeof createGame>>;
 const games: Record<string, Game> = {};
 
-server.listen(3000, () => {
+server.listen(3000, '0.0.0.0' , () => {
   console.log('🚀 Server listening on http://localhost:3000');
 });
 

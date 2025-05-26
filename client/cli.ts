@@ -2,7 +2,7 @@ import { io } from 'socket.io-client';
 import { UserCreateGame } from './menu/UserCreateGame.ts';
 import * as readline from 'readline';
 
-const socket = io('http://localhost:3000');
+const socket = io('http://192.168.178.29:3000');
 
 function ask(question: string): Promise<string> {
   const rl = readline.createInterface({
